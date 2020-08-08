@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "sqlServerName": {
-            "value": ""
+            "value": "cssql0034234"
         },
         "sqlAdminUserName": {
-            "value": ""
+            "value": "sqladmin"
         },
         "sqlAdminPass": {
             "reference": {
