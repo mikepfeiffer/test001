@@ -1,0 +1,20 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sqlServerName": {
+            "value": ""
+        },
+        "sqlAdminUserName": {
+            "value": ""
+        },
+        "sqlAdminPass": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/863a3a4a-74b0-480d-b14d-c2a0fd715473/resourceGroups/vaults/providers/Microsoft.KeyVault/vaults/cskv00101"
+                },
+                "secretName": "sqlAdminPass"
+            }
+        }
+    }
+}
